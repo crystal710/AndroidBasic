@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FourButton</string>
+    <string name="strGoNate">네이트홈페이지열기</string>
+    <string name="strCall911">911응급전화걸기</string>
+    <string name="strGoGallery">갤러리 열기</string>
+    <string name="finish">앱 끝내기</string>
+</resources>
