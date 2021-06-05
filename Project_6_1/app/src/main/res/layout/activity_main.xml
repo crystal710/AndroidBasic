@@ -15,12 +15,13 @@
             android:id="@+id/Chronometer1"
             android:format="예약에 걸린 시간 %s"
             android:gravity="center"
+            android:textColor="#F15F5F"
             android:textSize="20dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/BtnStart"
-            android:tex="예약 시작"/>
+            android:text="예약 시작"/>
     </LinearLayout>
 
     <RadioGroup
@@ -49,10 +50,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/CalendarView1"
-                android:showWeekNumber="false"/>
+                android:showWeekNumber="false" />
 
             <TimePicker
                 android:id="@+id/TimePicker1"
+                android:timePickerMode="spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </FrameLayout>
@@ -63,7 +65,7 @@
         android:background="#CCCCCC"
         android:orientation="horizontal">
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/BtnEnd"
             android:text="예약완료"/>
@@ -97,20 +99,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/TvHour"
+            android:text="00"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/TvMinute"
             android:text="00"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="분"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/TvSecond"
-            android:text="00"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="초"/>
+            android:text="분 예약됨"/>
     </LinearLayout>
 </LinearLayout>
